@@ -1,0 +1,88 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /*Primary Colors*/
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Blanco: #fff;
+
+  /*Neutral Colors*/
+
+  --Very-dark-blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  background-color: var(--Very-Light-Gray);
+  font-family: "Poppins", sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 30px;
+}
+.tittleOne {
+  font-weight: 200;
+  font-size: 27px;
+  color: var(--Very-dark-blue);
+  padding-bottom: 10px;
+  text-align: center;
+}
+.tittleTwo {
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--Very-dark-blue);
+  padding-bottom: 20px;
+  text-align: center;
+}
+.textTittle {
+  line-height: 25px;
+  text-align: center;
+  font-size: 17px;
+  padding-bottom: 80px;
+  color: var(--Grayish-Blue);
+}
+.boxOne,
+.boxTwo,
+.boxThree,
+.boxFour {
+  margin-bottom: 25px;
+  background-color: var(--Blanco);
+  box-shadow: -2px 2px 12px -3px rgba(180, 179, 179, 0.75);
+  border-radius: 8px;
+}
+.nameBox {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--Very-dark-blue);
+  padding: 25px 25px 10px 25px;
+}
+.textBox {
+  color: var(--Grayish-Blue);
+  font-size: 13px;
+  line-height: 25px;
+  padding: 0 25px 40px;
+}
+
+.imgSupervisor,
+.imgTeamBuilder,
+.imgKarma,
+.imgCalculator {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 0 35px 30px;
+}
+
+@media (min-width: 900px){
+    .containerFather{
+        display: flex;
+        
+    }
+
+}
