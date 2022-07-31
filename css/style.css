@@ -4,17 +4,17 @@
 :root {
   /*Primary Colors*/
 
-  --Red: hsl(0, 78%, 62%);
-  --Cyan: hsl(180, 62%, 55%);
-  --Orange: hsl(34, 97%, 64%);
-  --Blue: hsl(212, 86%, 64%);
+  --Red: #ea5353;
+  --Cyan: #45d3d3;
+  --Orange: #fcaf4a;
+  --Blue: #549ef2;
   --Blanco: #fff;
 
   /*Neutral Colors*/
 
-  --Very-dark-blue: hsl(234, 12%, 34%);
-  --Grayish-Blue: hsl(229, 6%, 66%);
-  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-dark-blue: #4d4f61;
+  --Grayish-Blue: #a3a5ae;
+  --Very-Light-Gray: #fafafa;
 }
 body {
   background-color: var(--Very-Light-Gray);
@@ -57,6 +57,18 @@ main {
   box-shadow: -2px 2px 12px -3px rgba(180, 179, 179, 0.75);
   border-radius: 8px;
 }
+.boxOne {
+  border-top: 4px solid var(--Cyan);
+}
+.boxTwo {
+  border-top: 4px solid var(--Red);
+}
+.boxThree {
+  border-top: 4px solid var(--Orange);
+}
+.boxFour {
+  border-top: 4px solid var(--Blue);
+}
 .nameBox {
   font-size: 20px;
   font-weight: 600;
@@ -78,11 +90,38 @@ main {
   flex-direction: row-reverse;
   padding: 0 35px 30px;
 }
-
-@media (min-width: 900px){
-    .containerFather{
-        display: flex;
-        
-    }
-
+@media (min-width: 900px) {
+  .containerFather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxOne {
+    margin-right: 30px;
+    height: 45%;
+    width: 25%;
+  }
+  .boxTwoandThree {
+    height: 45%;
+    width: 25%;
+  }
+  .boxFour {
+    margin-left: 30px;
+    height: 40%;
+    width: 25%;
+  }
+  .containerTittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tittleOne,
+  .tittleTwo {
+    font-size: 35px;
+  }
+  .textTittle {
+    text-align: center;
+    width: 60%;
+  }
 }
